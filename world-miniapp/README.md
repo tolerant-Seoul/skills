@@ -1,16 +1,16 @@
 # World Mini App Skill for Claude Code
 
-World Mini App 개발을 위한 Claude Code 스킬입니다. World ID, MiniKit SDK, World Chain 관련 개발 가이드를 제공합니다.
+A Claude Code skill for World Mini App development, providing guides for World ID, MiniKit SDK, and World Chain integration.
 
-## 설치 방법
+## Installation
 
-### 방법 1: One-liner 설치 (권장)
+### Method 1: One-liner Install (Recommended)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/tolerant-Seoul/skills/main/world-miniapp/install.sh | bash
 ```
 
-### 방법 2: Git Clone 후 로컬 설치
+### Method 2: Git Clone + Local Install
 
 ```bash
 git clone https://github.com/tolerant-Seoul/skills.git
@@ -19,60 +19,60 @@ chmod +x install-local.sh
 ./install-local.sh
 ```
 
-### 방법 3: 수동 설치
+### Method 3: Manual Install
 
 ```bash
-# 스킬 디렉토리 생성
+# Create skill directory
 mkdir -p ~/.claude/skills/world-miniapp/references
 
-# 파일 복사
+# Copy files
 cp SKILL.md ~/.claude/skills/world-miniapp/
 cp references/*.md ~/.claude/skills/world-miniapp/references/
 ```
 
-## 사용법
+## Usage
 
-Claude Code에서 `/world` 명령어로 스킬을 활성화합니다.
+Activate the skill in Claude Code with the `/world` command:
 
 ```
 /world
 ```
 
-또는 World App, MiniKit, World ID 관련 질문을 하면 자동으로 활성화됩니다.
+The skill also activates automatically when you ask about World App, MiniKit, World ID, or World Chain.
 
-## 제거
+## Uninstall
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/tolerant-Seoul/skills/main/world-miniapp/uninstall.sh | bash
 ```
 
-또는:
+Or manually:
 
 ```bash
 rm -rf ~/.claude/skills/world-miniapp
 ```
 
-## 포함된 기능
+## Features
 
-- **MiniKit SDK 통합**: 설치, 설정, 명령어 레퍼런스
-- **World ID 인증**: Orb/Device 검증, ZK 프루프 처리
-- **결제 시스템**: WLD/USDC 결제, 트랜잭션 검증
-- **스마트 컨트랙트**: World Chain 트랜잭션 가이드
-- **알림 & 딥링크**: 푸시 알림, 앱 딥링크 구현
-- **백엔드 검증**: SIWE, 프루프 검증, 보안 패턴
+- **MiniKit SDK Integration**: Installation, setup, command reference
+- **World ID Authentication**: Orb/Device verification, ZK proof handling
+- **Payment System**: WLD/USDC payments, transaction verification
+- **Smart Contracts**: World Chain transaction guide
+- **Notifications & Deep Links**: Push notifications, app deep links
+- **Backend Verification**: SIWE, proof verification, security patterns
 
-## 파일 구조
+## File Structure
 
 ```
 ~/.claude/skills/world-miniapp/
-├── SKILL.md                         # 메인 스킬 정의
+├── SKILL.md                         # Main skill definition
 └── references/
-    ├── api-endpoints.md             # API 엔드포인트 레퍼런스
-    ├── backend-verification.md      # 백엔드 검증 패턴
-    ├── deep-links.md                # 딥링크 가이드
-    └── minikit-commands.md          # MiniKit 명령어 퀵 레퍼런스
+    ├── api-endpoints.md             # API endpoint reference
+    ├── backend-verification.md      # Backend verification patterns
+    ├── deep-links.md                # Deep link guide
+    └── minikit-commands.md          # MiniKit command quick reference
 ```
 
-## 라이선스
+## License
 
 MIT
